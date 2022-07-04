@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  php:
+    container_name: gilded-rose-kata
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
+    stdin_open: true
+    tty: true
